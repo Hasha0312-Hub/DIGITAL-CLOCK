@@ -12,7 +12,7 @@ int main(){
    struct tm *pTime = NULL;
    bool isRunning = true;
 
-   printf("DIGITAL CLOCK\n");
+   printf("\n\n\n\n\n\n\n\n\n\n\n                                                 ---DIGITAL CLOCK---             \n\n\n\n");
 
    while(isRunning){
 
@@ -20,10 +20,11 @@ int main(){
 
       pTime = localtime(&rawtime);
 
-      printf("\r%02d:%02d:%02d",(*pTime).tm_hour,(*pTime).tm_min,(*pTime).tm_sec);
+      printf("\r                                                      %02d:%02d:%02d                   ",(*pTime).tm_hour,(*pTime).tm_min,(*pTime).tm_sec);
 
       Sleep(1000);
 
    }
   return 0;
 }
+
